@@ -1,0 +1,255 @@
+@font-face {
+  font-family: V_Bold;
+  src: url(../style/vazirmatn-v33.003/fonts/ttf/Vazirmatn-Bold.ttf);
+}
+
+@font-face {
+  font-family: V_XBold;
+  src: url(../style/vazirmatn-v33.003/fonts/ttf/Vazirmatn-ExtraBold.ttf);
+}
+@font-face {
+  font-family: Register_Font1;
+  src: url(./Amiri/Amiri-BoldItalic.ttf);
+}
+
+
+body {
+  /* direction: rtl; */
+  
+  background-color: wheat;
+  height: 100vh;
+  max-width: 100vw;
+}
+.main_Website {
+  direction: rtl;
+  /* display: grid;
+  grid-template-columns: 10% 10% 80%;
+  grid-template-rows: 10% 10% 80%;
+   */
+}
+
+
+header {
+  margin: 5vw;
+  
+  position: absolute;
+   height: 16vh;
+   width: 88vw;
+  display: grid;
+ 
+  justify-self: start;
+  grid-template-columns: 15% 10% 10% 10% 10% 15%;
+  grid-template-rows: 10%  80% 10% ;
+  column-gap: 7%;
+  /* border-bottom: 1.5px solid; */
+  padding: 7px 40px;
+  font-family: V_Bold;
+ 
+  z-index: 10;
+
+  
+}
+
+
+.Box_Border {
+  margin-top: 1.5vw;
+  margin: 1.5vw;
+  width: 90vw;
+  height: 16vh;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+ .Box_Border::before {
+  content: '';
+  position: absolute;
+  width: 75vw;
+  height: 140vh;
+   background-color: wheat; 
+  background:linear-gradient(#00ccff , #d400d4);
+  animation: animate 18s linear infinite ;
+ 
+}
+
+.Box_Border::after {
+  content: '';
+  position: absolute;
+  background-color: wheat;
+  inset: 3.2px;
+  border-radius: 16px;
+ 
+}
+
+header  ul {
+  grid-column-start: 2;
+  grid-column-end: 5;
+list-style-type: none;
+
+width: 20vw;
+display: flex;
+
+
+ 
+}
+
+
+
+
+.Logo {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  justify-items: end;
+ 
+}
+header img {
+  display: grid;
+   justify-self: end; 
+   width: 8vw;
+   height: auto;
+   justify-items: end;
+ 
+  
+}
+
+header li {
+  list-style-type: none;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  justify-self: center;
+  align-self: center;
+}
+
+header  li a:hover ,
+header  li a:active
+
+{
+  color: #6A89cc;
+  border-bottom: 2px solid #6A89cc;
+  transition: border-bottom .2s ease-in-out;
+  box-shadow: 0 5px 11px -9px #000;
+  cursor: pointer;
+}
+
+.Logo_R {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 6;
+  grid-column-end: 6;
+  justify-self: start;
+  align-self: center;
+
+}
+.Logo_R img {
+  color: black;
+  width: 3.5vw;
+  height: auto;
+}
+.Container {
+  max-width: 100vw;
+  height: 520vh;
+ 
+}
+
+
+
+
+ li {
+ font-size: 50%;
+ color: red;
+
+}
+
+/* header */
+
+/* Banner */
+
+.Banner {
+  margin-top: 2.5vw;
+  margin-right: 1.5vw;
+  width: 75vw;
+  height: 50vh;
+   display: grid;
+  grid-template-rows: 15% 75%;
+  grid-template-columns: 10% 90%;
+  row-gap: 5%;   
+  
+
+}
+.Banner h2 {
+  font-family: V_XBold;
+  justify-self: start;
+  grid-column-start: 3;
+  grid-column-end: 2;
+  font-size: 1.5rem;
+  
+}
+
+.image_size {
+  grid-column-start: 3;
+  grid-column-end: 2;
+  grid-row: auto;
+
+}
+/* Video */
+
+.I_Video {
+  /* grid-column-start: ; */
+  background-color: white;
+  max-width: 100vw;
+  height: 110vh;
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 15% 80% 5%;
+  margin-top: 11vw;
+
+  
+}
+.I_Video h2 {
+  color: #d400d4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-family: Register_Font1;
+  align-self: center;
+}
+.I_Video video {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border-radius: 5%;
+  width: 75vw;
+  height: auto;
+  justify-self: center;
+  box-shadow: 5px 5px #ffff;
+  border-color: #ffff #fff #ffff;
+}
+
+
+
+
+.Card_WebSite {
+  display: grid;
+  max-width: 100vw;
+  height: 100vh;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto
+  ;
+
+}
+
+
+
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+   100%{
+    transform: rotate(360deg);
+  }
+}
